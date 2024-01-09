@@ -1,12 +1,8 @@
 const forElem = document.querySelector(".for")
 
-function goTo (id){
-    window.location = './datails.html?id=' + id
-}
-
 function alldata() {
-    fetch("http://localhost:3000/All")
-        .then(res => res.json())
+    axios.get("http://localhost:3000/All")
+        .then(res => res.data)
         .then(data => {
             data.forEach(element => {
                 forElem.innerHTML += `
@@ -15,6 +11,11 @@ function alldata() {
             <span>${element.name}</span>
             <h5>${element.means}</h5>
             <p>${element.destriction}</p>
+            <div class="btn">
+                <a href="./datails.html?id=${element.id}">Deteils</a>
+                <a href='./add.html?id=${element.id}'>Update</a>
+                <div onclick="deleteFunc(${element.id})">Delete</div>
+            </div>
            </div>
             `
             });
@@ -22,23 +23,8 @@ function alldata() {
 }
 alldata()
 
-// const menu=document.querySelector(".list")
-// const menuicon=document.querySelector("#menu")
-// const closebtn=document.querySelector(".closebtn")
-// menuicon.addEventListener("click", ()=>{ 
-//     menu.style.transform="translateX(100%)"
-//     menu.classList.add("active")
-//     closebtn.addEventListener("click", ()=>{
-//         menu.style.transform="translateX(0%)"
-//         menu.classList.remove("active")
-//     })
-
-// })
-
-function Get (){
-    fetch(" http://localhost:3000/All")
-  .then(res=> res.json())
-  .then(data=>{
-
-  })
+function deleteFunc(id) {
+    axios.delete("http://localhost:3000/All/" + id)
+    window.location.reload()
 }
+

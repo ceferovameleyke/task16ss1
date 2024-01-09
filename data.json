@@ -1,25 +1,25 @@
 {
-    "All": [
-        {
-            "id": 1,
-            "image": "https://preview.colorlib.com/theme/easylo/assets/img/icon/services1.svg",
-            "name": "Home Loan",
-            "means": "What are my options and the cost to exercise",
-            "destriction": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
-        },
-        {
-            "id": 2,
-            "image": "https://preview.colorlib.com/theme/easylo/assets/img/icon/services2.svg",
-            "name": "Car Loan",
-            "means": "What are my options and the cost to exercise",
-            "destriction": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
-        },
-        {
-            "id": 3,
-            "image": "https://preview.colorlib.com/theme/easylo/assets/img/icon/services3.svg",
-            "name": "Business Loan",
-            "means": "What are my options and the cost to exercise",
-            "destriction": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
-        }
-    ]
+  "All": [
+    {
+      "id": 1,
+      "image": "https://preview.colorlib.com/theme/easylo/assets/img/icon/services1.svg",
+      "name": "Home Loan",
+      "means": "What are my options and the cost to exercise",
+      "destriction": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
+    },
+    {
+      "id": 2,
+      "image": "https://preview.colorlib.com/theme/easylo/assets/img/icon/services2.svg",
+      "name": "Car Loan",
+      "means": "What are my options and the cost to exercise",
+      "destriction": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
+    },
+    {
+      "id": 3,
+      "image": "https://preview.colorlib.com/theme/easylo/assets/img/icon/services2.svg",
+      "name": "Car Loan",
+      "means": "What are my options and the cost to exercise",
+      "destriction": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
+    }
+  ]
 }
